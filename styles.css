@@ -1,0 +1,116 @@
+*:focus {
+  outline: none;
+}
+
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 138, 206, 0.402) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+#title {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: -7px;
+  margin-top: 50px;
+}
+
+#description {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  color: rgb(235, 235, 235);
+  margin-bottom: 25px;
+}
+
+#survey-form {
+  border-radius: 5px;
+  background:rgba(28, 28, 79, 0.945);
+  width: 45%;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.form-control {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 98%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+select {
+  width: 98%;
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.bottom-margin p {
+  margin-bottom: 5px;
+}
+
+#recommend p {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#recommend label {
+  margin-bottom: -20px;
+}
+
+.input-checkbox {
+  margin: 5px;
+}
+
+textarea {
+  max-width: 98%;
+  min-width: 98%;
+  min-height: 50px;
+}
+
+#button {
+  width: 100%;
+  padding: 12px;
+  background-color: #37af65;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.1em;
+}
+
+#button:hover {
+  background-color: #36a05e;
+  cursor: pointer;
+}
+
+#button:active {
+  box-shadow: 0 0 5px #37af65;
+}
+
+
+/* mobile friendly */
+
+@media all and (max-width: 900px) {
+  #survey-form {
+    width: 60%;
+  }
+}
+
